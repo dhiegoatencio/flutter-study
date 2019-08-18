@@ -51,18 +51,22 @@ class _WhatsappState extends State<Whatsapp>
         title: Text("WhatsApp"),
         elevation: 0.7,
         bottom: appBarBottom(),
-        actions: <Widget>[
-          new Icon(
-            Icons.search,
-          ),
-          new Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 10.0),
-          ),
-          new Icon(Icons.menu),
-          new Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 10.0),
-          ),
-        ]);
+        actions: appBarActions());
+  }
+
+  List<Widget> appBarActions() {
+    return <Widget>[
+      new Icon(
+        Icons.search,
+      ),
+      new Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 10.0),
+      ),
+      new Icon(Icons.menu),
+      new Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 10.0),
+      ),
+    ];
   }
 
   FloatingActionButton buildFloatingActionButton(BuildContext context) {
