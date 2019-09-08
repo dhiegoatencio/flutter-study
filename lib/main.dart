@@ -6,7 +6,6 @@ import 'physics_simulation_exampl/physics_simulation_example.dart';
 
 
 // main() => runApp(WhatsAppWidget());
-// main() => runApp(AnimatedPageRouteTransition());
-
-main() => runApp(PhysicsSimulationExample());
+main() => runApp(AnimatedPageRouteTransition());
+//main() => runApp(PhysicsSimulationExample());
 
